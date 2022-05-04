@@ -1,0 +1,35 @@
+.button {
+    min-width: 250px;
+    min-height: 50px;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+
+    &--small {
+        min-width: 200px;
+        min-height: 40px;
+    }
+
+    &--large {
+        min-width: 300px;
+        min-height: 60px;
+    }
+
+    &--round {
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+    }
+
+    &--disabled {
+        background-color: #B3B3BA;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+}

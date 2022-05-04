@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  min-width: 250px;
+  min-height: 50px;
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.button--small {
+  min-width: 200px;
+  min-height: 40px;
+}
+.button--large {
+  min-width: 300px;
+  min-height: 60px;
+}
+.button--round {
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+}
+.button--disabled {
+  background-color: #B3B3BA;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.card {
+  border: 2px solid blue;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card--primary {
+  background-color: green;
+}
+.card__content {
+  padding: 20px;
+}
+.card__image {
+  width: 100%;
+}
+.card__title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #24A3FF;
+}
+.card__date {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.card__date--current {
+  color: red;
+  font-weight: 800;
+}
+.card__separator {
+  height: 4px;
+  background-color: #E6E6F0;
+  border: none;
+}
+.card__description {
+  font-size: 16px;
+  line-height: 22px;
+}
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card__button {
+  background-color: red;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid;
+  flex-wrap: wrap;
+}
+.list__item {
+  width: 25%;
+}
+.list .card {
+  width: 25%;
+}
+.list .card__date {
+  font-size: 40px;
+}

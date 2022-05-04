@@ -1,0 +1,95 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div ~ p {
+    background-color: blue;
+    color: red;
+    font-size: 32px;
+}
+
+div + p {
+    color: red;
+    font-size: 28px;
+}
+
+
+section > div > h2 ~ p {
+    font-size: 75px;
+}
+
+.list .list-item:nth-child(5) {
+    color: red;
+}
+
+.list-item:first-child {
+    color: gold;
+}
+
+.list-item:last-child {
+    color: green;
+}
+
+.box:empty {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+/* 
+p:not(.par) {
+    font-size: 32px;
+    color: yellow;
+} */
+
+p {
+    color: red;
+    border: 5px solid black;
+    font-size: 22px;
+}
+
+p strong {
+    border: inherit;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: red;
+    font-size: 32px;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:focus {
+    border: orange 2px solid;
+}
+input:focus {
+    background-color: hotpink;
+}
+
+a[href="https://www.youtube.com/"] {
+    color: red;
+    font-size: 32px;
+}
+
+[href^="https"] {
+    font-size: 82px;
+}
+
+[href *= "oo"] {
+    font-weight: bold;
+}
+
+[href $= ".in.ua"] {
+    color: green;
+}

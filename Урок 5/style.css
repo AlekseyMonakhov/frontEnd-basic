@@ -1,0 +1,55 @@
+header {
+    background-color: bisque;
+}
+
+h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+nav.menu {
+    border: 1px solid red;
+}
+
+a.link {
+    text-decoration: none;
+    color: green;
+}
+
+a.link.active-page {
+    color: red;
+}
+
+main section {
+    border: 2px solid pink;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.current-rating {
+    color: yellow;
+}
+
+.rating {
+    color: green;
+}
+
+.film-description {
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.movie-card {
+    border: green 2px solid
+}
+
+.hashtag>a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background: olive;
+}

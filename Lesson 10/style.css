@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 5000px;
+}
+
+main {
+    border: 4px solid red;
+    margin-bottom: 40px;
+    padding-top: 150px;
+}
+
+section {
+    border: 4px solid blue;
+}
+
+div {
+    padding: 20px;
+    border: 4px solid yellow;
+}
+
+p {
+    padding: 20px;
+    border: 4px solid green;
+}
+
+.list {
+    width: 1200px;
+    height: 600px;
+    background-color: tomato;
+    margin-bottom: 10px;
+}
+
+.position {
+    position: relative;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+input, button {
+    display: block;
+}
+
+.btn-close {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}
+
+nav {
+    border: 4px solid black;
+    background-color: yellowgreen;
+    padding: 40px;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 100, 0.7);
+    position: fixed;
+}

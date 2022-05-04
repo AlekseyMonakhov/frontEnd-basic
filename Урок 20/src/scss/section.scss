@@ -1,0 +1,15 @@
+$color: red;
+h1 {
+    color: $color;
+    background-color: black;
+    &:hover {
+        background-color: red;
+    }
+    &-div {
+        font-size: 22px;
+    }
+}
+p {
+    font-size: 55px;
+    color:  red;
+}

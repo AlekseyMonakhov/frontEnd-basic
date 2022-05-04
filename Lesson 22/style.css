@@ -1,0 +1,104 @@
+    /* .grid__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-rows: minmax(150px, auto)
+}
+*/
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    border: 2px solid orange;
+    padding: 5px;
+    background: black;
+} 
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(20vh, auto);
+    gap: 5px;
+    margin-bottom: 200px;
+    
+}
+.grid__container .gird-item__1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid__container .gird-item__5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid__container .gird-item__4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid__container .gird-item__1:hover, .grid__container.gird-item__5:hover {
+ z-index: 2;
+} 
+.grid__areas {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(15vh, auto);
+    grid-template-areas:
+        "a a a a b b b b"
+        "a a a a b b b b"
+        "c c c d d d d d" 
+        "c c c d d d d d" 
+        ". . . e . . . ." 
+    ;
+}
+.grid__areas .gird-item__1 {
+    grid-area: a;
+}
+.grid__areas .gird-item__2 {
+    grid-area: b;
+}
+.grid__areas .gird-item__3 {
+    grid-area: c;
+}
+.grid__areas .gird-item__4 {
+    grid-area: d;
+}
+.grid__areas .gird-item__5 {
+    grid-area: e;
+}
+.progress-1 {
+    width:100px;
+    height:20px;
+    background:
+     linear-gradient(#000 0 0) 0/0% no-repeat
+     grey;
+    animation:anim 2s infinite linear;
+  }
+  @keyframes anim {
+      0% {
+          background-color: red;
+      } 
+      100% {
+        background-size:100%;
+        background-color: orange;
+      }
+  }
+  
+
+.uc-menu-desktop .menu-desktop-text:hover + .square {
+    border: 3px solid;
+    border-image-source: linear-gradient(254.84deg, #0057FF 31.31%, #FFFFFF 42.57%, #FFF500 54.31%);
+    background: pink;
+}
+.uc-menu-desktop {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(10vh, auto);
+    gap: 10px;
+}
+

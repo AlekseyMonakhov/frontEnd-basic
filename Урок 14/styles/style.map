@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_promo.scss",
+		"../scss/_cards.scss",
+		"../scss/_about.scss",
+		"../scss/_contact.scss"
+	],
+	"sourcesContent": [
+		"@import \"./_promo.scss\";\r\n@import \"./_cards.scss\";\r\n@import \"./_about.scss\";\r\n@import \"./_contact.scss\";\r\n\r\n.message {\r\n    font-size: 32px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n}\r\n\r\n\r\n.message-error {\r\n    @extend .message;\r\n    color: red;\r\n    background-color: tomato;\r\n}\r\n\r\n.message-info {\r\n    @extend .message;\r\n    color: blue;\r\n    background-color: skyblue;\r\n}\r\n\r\n.message-warning {\r\n    @extend .message;\r\n    color: orange;\r\n    background-color: yellow;\r\n}\r\n\r\n.message-super-error {\r\n    @extend .message-error;\r\n\r\n    text-decoration: underline;\r\n    &::after {\r\n        content: \"!!!\";\r\n    }\r\n}\r\n\r\n",
+		".promo {\r\n    color: red;\r\n  }\r\n  ",
+		"\r\n.cards {\r\n    color: yellow;\r\n  }\r\n  ",
+		"\r\n.about {\r\n    color: green;\r\n  }",
+		"\r\n\r\n.contact {\r\n    color: rgb(255, 255, 255);\r\n  }"
+	],
+	"names": [],
+	"mappings": ";;ACAA,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAG;CACX;;;ACDH,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAM;CACd;;;ACFH,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;CACb;;;ACDH,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,KAAkB;CAC1B;;;AJCH,AAAA,QAAQ,EAOR,cAAc,EAkBd,oBAAoB,EAZpB,aAAa,EAMb,gBAAgB,CAnBP;EACL,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,SAAS;CAC5B;;;AAGD,AAAA,cAAc,EAkBd,oBAAoB,CAlBL;EAEX,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,MAAM;CAC3B;;;AAED,AAAA,aAAa,CAAC;EAEV,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,OAAO;CAC5B;;;AAED,AAAA,gBAAgB,CAAC;EAEb,KAAK,EAAE,MAAM;EACb,gBAAgB,EAAE,MAAM;CAC3B;;;AAED,AAAA,oBAAoB,CAAC;EAGjB,eAAe,EAAE,SAAS;CAI7B;;;AAPD,AAII,oBAJgB,AAIf,OAAO,CAAC;EACL,OAAO,EAAE,KAAK;CACjB"
+}

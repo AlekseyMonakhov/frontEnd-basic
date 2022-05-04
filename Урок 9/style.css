@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+/* p::first-letter {
+    color: red;
+    font-size: 44px;
+}
+
+p::first-line {
+    background-color: aquamarine;
+}
+
+p::selection {
+    color: white;
+    background-color: black;
+
+} */
+
+
+/* 
+p::before {
+    content: 'before';
+    color: red;
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+}
+
+p::after {
+    content: 'after';
+    color: red;
+} */
+
+
+p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+
+.text:hover::before {
+    background-color: red;
+}
+
+.list {
+    list-style: none;
+}
+
+.list .list-item::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.list .sucsess::before {
+    background-color: greenyellow;
+    background-image: url(./down-arrow.png);
+}
+
+.list .decline::before {
+    background-color: white;
+    background-image: url(./cancel.svg);
+}
+
+.block {
+    padding: 40px 0;
+    font-size: 20px;
+    background-color: tomato;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid red;
+    background-color: pink;
+    overflow: hidden;
+    border-radius: 5px 28px 0 0;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 0 10px;
+}

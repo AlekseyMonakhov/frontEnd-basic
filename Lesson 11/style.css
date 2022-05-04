@@ -1,0 +1,41 @@
+body {
+    font-family: arial, "Helvetica neune";
+    font-size: 32px;
+}
+
+.list {
+    margin: 0 auto;
+    width: 800px;
+    height: 1600px;
+    border: 4px solid red;
+    position: relative;
+}
+
+.list-item,
+.nested-list-item {
+    height: 80px;
+    background-color: rgb(178, 59, 201);
+    border-bottom: 1px solid lightgrey;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.list-item {
+    position: sticky;
+    top: 0;
+}
+
+.list-item:nth-of-type(2) {
+    position: sticky;
+    top: 80px;
+}
+
+.list-item:nth-of-type(3) {
+    position: sticky;
+    top: 160px;
+}
+
+.nested-list-item {
+    background-color: rgb(210, 82, 82);
+    padding-left: 40px;
+}

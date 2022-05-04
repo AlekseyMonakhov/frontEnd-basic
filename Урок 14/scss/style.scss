@@ -1,0 +1,39 @@
+@import "./_promo.scss";
+@import "./_cards.scss";
+@import "./_about.scss";
+@import "./_contact.scss";
+
+.message {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.message-error {
+    @extend .message;
+    color: red;
+    background-color: tomato;
+}
+
+.message-info {
+    @extend .message;
+    color: blue;
+    background-color: skyblue;
+}
+
+.message-warning {
+    @extend .message;
+    color: orange;
+    background-color: yellow;
+}
+
+.message-super-error {
+    @extend .message-error;
+
+    text-decoration: underline;
+    &::after {
+        content: "!!!";
+    }
+}
+

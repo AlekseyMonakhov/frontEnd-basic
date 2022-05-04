@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* line 1, ../../../../../Desktop/Гилель/Урок 14/scss/_promo.scss */
+.promo {
+  color: red;
+}
+
+/* line 2, ../../../../../Desktop/Гилель/Урок 14/scss/_cards.scss */
+.cards {
+  color: yellow;
+}
+
+/* line 2, ../../../../../Desktop/Гилель/Урок 14/scss/_about.scss */
+.about {
+  color: green;
+}
+
+/* line 3, ../../../../../Desktop/Гилель/Урок 14/scss/_contact.scss */
+.contact {
+  color: white;
+}
+
+/* line 6, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message, .message-error, .message-super-error, .message-info, .message-warning {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 13, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message-error, .message-super-error {
+  color: red;
+  background-color: tomato;
+}
+
+/* line 19, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message-info {
+  color: blue;
+  background-color: skyblue;
+}
+
+/* line 25, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message-warning {
+  color: orange;
+  background-color: yellow;
+}
+
+/* line 31, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message-super-error {
+  text-decoration: underline;
+}
+
+/* line 35, ../../../../../Desktop/Гилель/Урок 14/scss/style.scss */
+.message-super-error::after {
+  content: "!!!";
+}
+
+/*# sourceMappingURL=style.css.map */

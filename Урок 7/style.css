@@ -1,0 +1,50 @@
+/* div {
+    background-color: green;
+    width: 400px;
+    height: 200px;
+    border: 2px solid red;
+    margin: 20px auto;
+    padding: 10px 25px 10px 35px;    
+
+    box-sizing: border-box;
+} */
+
+section {
+    background-image: url(https://i.ytimg.com/vi/NKk6rGDpq6Y/sddefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid red;
+    font-size: 15px;
+}
+
+/* input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+p {
+    padding: 0 20px;
+}
+
+/* #blank {
+    color: red;
+} */
+
+body {
+    margin: 0;
+}
+
+nav {
+    font-size: 0;
+}
+
+nav a {
+    padding: 20px;
+    color: blue;
+    display: inline-block;
+    font-size: 22px;
+    border: red solid 3px;
+    text-transform: uppercase;
+}

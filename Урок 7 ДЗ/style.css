@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: bisque;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+nav.menu {
+    border: 1px solid red;
+    padding: 20px;
+}
+
+a.link {
+    text-decoration: none;
+    color: green;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a.link:hover {
+    color: blue;
+}
+
+a.link:last-child {
+    margin: 0;
+}
+
+a.link.active-page {
+    color: red;
+}
+
+main section {
+    border: 2px solid pink;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.current-rating {
+    color: yellow;
+}
+
+.rating {
+    color: green;
+}
+
+.film-description {
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.movie-card {
+    width: 800px;
+    border: green 2px solid;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+div.movie-card:last-child {
+    margin-bottom: 0;
+}
+
+.hashtag>a {
+    text-decoration: none;
+    color: black;
+}
+
+.hashtag a:nth-child(2n) {
+    color: pink;
+}
+
+.movie-card:nth-last-child(2) li:nth-child(2) {
+    background-color: pink;
+}
+
+footer {
+    background: olive;
+}
+
+[href^="tel"]:hover {
+    background: pink;
+}
+
+[href^="mailto"]:hover {
+    color: red;
+    background-color: beige;
+}

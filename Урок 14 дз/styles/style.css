@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* line 12, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+html, body, section {
+  height: 100%;
+}
+
+/* line 20, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* line 25, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.general {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+/* line 32, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.header {
+  max-width: 1400px;
+  margin: 0 auto 60px;
+  padding: 50px 60px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+/* line 41, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+/* line 47, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.contacts :last-child:only-child {
+  margin-left: -10px;
+}
+
+/* line 52, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.language, .adress, .phone, .facebook, .menu {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 57, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.lang-container {
+  font-size: 0;
+}
+
+/* line 60, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.language {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+/* line 71, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.language-current {
+  background-color: #F0145A;
+}
+
+/* line 74, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.language:not(.language-current):hover {
+  color: #B3B3BA;
+  background-color: #EDEDF7;
+  border: none;
+}
+
+/* line 81, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B3B3BA;
+}
+
+/* line 89, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.phone {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B3B3BA;
+}
+
+/* line 95, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.phone::before {
+  content: "";
+  display: inline-block;
+  background-color: #E6E6F0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* line 98, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.phone::after {
+  content: "";
+  display: inline-block;
+  background-color: #E6E6F0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* line 104, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.facebook-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 108, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.facebook-img:hover {
+  background-color: #24A3FF;
+  border-radius: 50%;
+}
+
+/* line 116, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 15px;
+}
+
+/* line 123, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.menu {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+/* line 131, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.menu-active {
+  color: #F0145A;
+}
+
+/* line 133, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.menu-active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #F0145A;
+}
+
+/* line 142, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.menu:not(.menu-active):hover {
+  color: #F0145A;
+}
+
+/* line 147, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../images/Frame2.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+/* line 157, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.content-title {
+  position: absolute;
+  top: 150px;
+  width: 600px;
+  z-index: 3;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+/* line 169, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.content-img {
+  z-index: 2;
+  position: relative;
+  top: 85px;
+}
+
+/* line 175, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.btn-container {
+  text-align: center;
+}
+
+/* line 178, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.btn {
+  background-image: url("../images/Vector1.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-color: transparent;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  bottom: 15px;
+  z-index: 5;
+}
+
+/* line 191, ../../../../../Desktop/Гилель/Урок 14 дз/scss/style.scss */
+.shade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  bottom: 0;
+  height: 25%;
+  background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+}
+
+/*# sourceMappingURL=style.css.map */

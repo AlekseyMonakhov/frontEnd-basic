@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбрать фильм</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="post">
+        <fieldset>
+            <legend>Добавить фильм</legend>
+            <label for="movieTitle">Укажите заголовок фильма</label>
+            <input type="text" name="movieTitle" placeholder="Заголовок Фильма" id="movieTitle" required>
+            
+            <br><br>
+
+            <label for="filmCover">Загрузите обложку фильма</label>
+            <input type="file" id="filmCover" name="filmCover">
+
+            <br><br>
+
+            <label for="filmDuration">Укажите длительность фильма</label>
+            <input type="time" id="filmDuration" name="filmDuration">
+        
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Укажите жанр</legend>
+
+            <label for="thriller">триллер</label>
+            <input type="checkbox" name="genre" value="триллер" id="thriller">
+
+            <label for="comedy">комедия</label>
+            <input type="checkbox" name="genre" value="комедия" id="comedy">
+
+            <label for="drama">драма</label>
+            <input type="checkbox" name="genre" value="драма" id="drama">
+
+            <label for="historical">исторический</label>
+            <input type="checkbox" name="genre" value="исторический" id="historical">
+
+            <label for="fantasy">фантастика</label>
+            <input type="checkbox" name="genre" value="фантастика" id="fantasy">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Укажите возраст аудитории</legend>
+
+            <label for="0-10">0-10</label>
+            <input type="radio" name="age" value="0-10" id="0-10">
+                
+            <label for="10-18">10-18</label>
+            <input type="radio" name="age" value="10-18" id="10-18">
+        
+            <label for="18+">18+</label>
+            <input type="radio" name="age" value="18+" id="18+">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Данные о фильме</legend>
+            <label for="link">Ссылка на фильм</label>
+            <input type="url" name="filmLink" placeholder="укажите ссылку на фильм" id="link">
+
+            <label for="date">Укажите дату выхода фильма</label>
+            <input type="date" id="date" name="date" value="">
+
+            <label for="rank">Оценка фильма от 0 до 10</label>
+            <input type="number" min="0" max="10" id="rank" value="" name="rank">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>И еще немного данных</legend>
+            <label for="comment">Напишите превью</label>
+            <textarea 
+                name="comment"
+                id="comment"
+                cols="40"
+                rows="5"
+                placeholder="Расскажите о фильме"
+                required
+            >
+            </textarea>
+            
+            <label for="Lang">Выберите язык фильма</label>
+            <select name="lang" id="Lang">
+                <option value="en">English</option>
+                <option value="ua">Ukranian</option>
+                <option value="pln">Polish</option>
+            </select>
+
+            
+            <input type="text" value="26.12.2021" name="today" hidden>
+
+        </fieldset>
+
+        <br><br>
+
+        <button type="submit">
+            send
+        </button>
+
+        <br><br>
+
+        <button type="reset">
+            reset
+        </button>
+
+    </form>
+    
+</body>
+</html>
