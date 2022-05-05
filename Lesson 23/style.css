@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+[class^="col"] {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 1, 0.12);
+}
+.row {
+    height: 50vh;
+}
+/* 
+hellow
+//
+*/
